@@ -40,13 +40,15 @@ sudo apt install squashfs-tools
 sudo snap disable anbox
 unsquashfs anbox_xxx.snap
 ```
-3. Copy libs to /squashfs-root/lib/anbox/swiftshader/:
+3. Copy libs to /squashfs-root/lib/anbox/swiftshader/
+
+4.Make new anbox snap: 
 
 ```
 mksquashfs squashfs-root anbox_xxx_mod.snap
 ```
 
-4. Replace the original anbox_xxx.snap with ambox_xxx_mod.snap
+5. Replace the original anbox_xxx.snap with ambox_xxx_mod.snap
 
 Dont forget to rename it to anbox_xxx.snap without "mod". You can do it with
 
@@ -56,13 +58,13 @@ mv anbox_xxx_mod.snap anbox_xxx.snap
 
 or through file manager
 
-5. After that:
+6. After that:
 
 ```
 sudo snap enable anbox
 ```
 
-6. Now you can test it with anbox session-manager:
+7. Now you can test it with anbox session-manager:
 
 ```
 anbox session-manager
