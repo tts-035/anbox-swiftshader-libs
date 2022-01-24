@@ -1,40 +1,61 @@
-# anbox-swiftshader-libs
+# Anbox swiftshader libs 
+## Archive contents
 
-archive contents
 
 
+```
 lib
     └── anbox
         └── swiftshader
             ├── libEGL.so
             ├── libGLES_CM.so
             └── libGLESv2.so
-
+```
 3 directories, 3 files
 
-put this libs to anbox snap path /lib/anbox/swiftshader/
+
+Put this libs to anbox snap path /lib/anbox/swiftshader/ if you want this to work:
+https://docs.anbox.io/userguide/advanced/software_rendering.html
 
 
-you need to repack anbox snap
-
-first install squashfs-tools
-
-apt install squashfs-tools
 
 
-then
+You need to repack anbox snap
+-----------------------------
 
+Snaps can be found at /var/lib/snapd/snaps
+
+First install squashfs-tools
+
+```
+sudo apt install squashfs-tools
+```
+
+
+Then
+
+```
 sudo snap disable anbox
 unsquashfs anbox_xxx.snap
-###copy libs to /squashfs-root/lib/anbox/swiftshader/
+```
+Copy libs to /squashfs-root/lib/anbox/swiftshader/
 
+```
 mksquashfs squashfs-root anbox_xxx_mod.snap
+```
 
-###replace the original anbox_xxx.snap with ambox_xxx_mod.snap
-###dont forget to rename it to anbox_xxx.snap without "mod"
+Replace the original anbox_xxx.snap with ambox_xxx_mod.snap
+
+Dont forget to rename it to anbox_xxx.snap without "mod"
+
+```
 sudo snap enable anbox
+```
 
-###test with anbox session-manager
+Test it with anbox session-manager
+
+```
 anbox session-manager
-###there are should not be any errors
+```
+There are should not be any errors
 
