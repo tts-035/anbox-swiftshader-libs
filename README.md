@@ -16,8 +16,8 @@ lib
 These files were taken from anbox beta snap
 
 
-Put this libs to anbox snap path /lib/anbox/swiftshader/ if you want this to work:
-https://docs.anbox.io/userguide/advanced/software_rendering.html
+Put this libs to anbox snap path /lib/anbox/swiftshader/ if you want 
+[software rendering](https://docs.anbox.io/userguide/advanced/software_rendering.html) to work
 
 
 
