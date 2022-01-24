@@ -46,16 +46,24 @@ mksquashfs squashfs-root anbox_xxx_mod.snap
 
 Replace the original anbox_xxx.snap with ambox_xxx_mod.snap
 
-Dont forget to rename it to anbox_xxx.snap without "mod"
+Dont forget to rename it to anbox_xxx.snap without "mod". You can do it with
+
+```
+mv anbox_xxx_mod.snap anbox_xxx.snap
+```
+
+or through file manager
+
+After that
 
 ```
 sudo snap enable anbox
 ```
 
-Test it with anbox session-manager
+Now you can test it with anbox session-manager
 
 ```
 anbox session-manager
 ```
-There are should not be any errors
+There shouldn't be any errors
 
