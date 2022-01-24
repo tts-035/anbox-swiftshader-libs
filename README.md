@@ -13,7 +13,8 @@ lib
 ```
 3 directories, 3 files
 
-These files are taken from anbox beta snap v
+These files were taken from anbox beta snap
+
 
 Put this libs to anbox snap path /lib/anbox/swiftshader/ if you want this to work:
 https://docs.anbox.io/userguide/advanced/software_rendering.html
