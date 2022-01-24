@@ -42,7 +42,7 @@ unsquashfs anbox_xxx.snap
 ```
 3. Copy libs to /squashfs-root/lib/anbox/swiftshader/
 
-4.Make new anbox snap: 
+4. Make new anbox snap: 
 
 ```
 mksquashfs squashfs-root anbox_xxx_mod.snap
